@@ -1,0 +1,162 @@
+          GIT AND GITHUB QUESTIONS
+
+1>what is the git and github?
+Ans->   GIT
+      	-Git is an open-distributed version control system and a software tool.
+	-Developer makes a change to a code file, they can commit that change to their.
+	-Developers can then pull the changes down from the remote repository and incorporate them into their code.
+	-Git favors both programmers and non-technical users by keeping track of their project files.
+
+      GITHUB
+	-GitHub is web based GUI and Server for git.
+	-GitHub offers VCS and SCM whereas git offers only VCS.
+	-GitHub is hosting service for git repository,so that we can showcase our work to public.
+ 
+2> What are the advantages of using Git?
+	-> We can keep the track of every file whichever we push into the git repository
+	-> Easy team Collaboration
+	-> It'll maintain various versions of the code or files.
+	-> We can use git for any sort of projects
+	-> Redundancy and replication of data and highly available.
+
+
+4>Explain about git architecture?
+
+	- Git is a three tree architecture
+		- The working Directory
+			-It contains changes that may not be tracked by Git
+
+		- Staging Index
+			-It contains changes that about to be committed into the repository
+
+		- Local Directory
+			-It is being tracked by Git
+
+3>what do you understand by term version control system?
+Ans->	VCS is kind of software which helps the developer team to communicate and keep track of all changes happening to the files or code. 
+     	It helps us to recover the code if we lose the code whichever we stored in our memory.
+	Version control provides access to the historical versions of a project. So, If any mistake is made, you can easily roll back to a previous version.
+	    
+
+
+4>What are the diff types of version control system?
+
+	3-types
+		Local Version Control Systems
+			It'll have a database that stores all file changes under revision control on disc in a special format.
+
+		Centralized Version Control Systems
+			Centralized Version Control Systems have a single repository, from which each user receives their working copy.			
+
+		Distributed Version Control Systems	
+			Distributed Version Control Systems contain multiple repositories, and different users can access each one with their working copy.		
+	
+
+5>what is git repository?
+	It's a storage unit of all the git files and we can access it from our local machine as well as cloud.
+	It'll keep track of the commit's made of the code.
+		
+
+6>Which command is used to initalize a repository in git?
+	git init command is used to initialize an empty repository in git.
+
+7>what is cloning?
+	Cloning is making a temporary copy of Data.
+	So, we can make any changes to our Temporary data so that our original data will not be affected.
+
+8>How to clone your code into git repository?
+	command - git clone <url>
+		  using the above command we can clone the data.
+
+9>What is push command, how do we push code into  git repository?
+	-> push command is used for Transferring the data from the local repository to the Remote repository.
+	-> By using the command git push origin main/master, we can push the changes available in the local repository to remote repository.
+	-> We should commit the data before pushing it into the git repository
+	-> git push -u origin main/master command is used to push the files or code without missing any modifications.
+	-> git push -f origin main/master, using this command we forcefully push our code into the git repository
+	   so that It'll resolve the warnings or errors automatically and push our code to the repository.
+
+
+13>How to commit your data to git repository?
+	-> Transfering the data from staging area to the git repository we use commit.
+	-> We can also mention whatever the changes/updates that we have done to the file or Code through commit
+	-> git commit -m <"commit_message"> - using this command we can commit the data to the git repository.
+
+
+14>what is staging area (or) indexing in git?
+	-> Staging area is place where we Add our code before we commit it into our git repository.
+	-> Using git add <file_name> command we can transfer our data to the staging area.
+	-> Staging area is located in between the data source and data targets.
+	
+
+15>What is the process to revert a commit that has already been pushed and made public? 
+	-> Revert Command happens after commiting the data to the local repository
+	-> Revert command is used to undo the updates/changes whatever we have commited to the existing code.
+	-> git revert <commit> 
+
+
+16>What is the use of the git config command?
+	-> Git config is used to setup the Admin accessing details
+	-> Examples for using the command
+		git config --global user.email <email>
+		git config --global user.name <name>
+
+17>what does the git status command do?
+	-> It'll be used to display the status of working directory
+	-> It will display the file which we need track or add the file to the staging area.
+
+18>What is the branching in git? which command is used to create branch?
+	-> git branch is a new/separate version of the main repository.
+	-> Branches allow you to work on different parts of a project without impacting the main branch. When the work is complete, a branch can be merged with the main project.
+	-> It allows developers to work on a new feature or bug fix without affecting the main codebase.
+
+19>Tell me something about git stash?
+	-> git stash store the changes whichever made recently on local workspace
+	-> git stash - command is used to save the work
+	-> git stash save "<Stashing Message>"  - command is used to save the work with a message.
+	-> git stash list - command is used to check the store stashes
+	-> git stash show - This command will show the file that is stashed or changes made on them.
+
+20>Diff btw git fetch and git pull?
+	-> git fetch tells the local repository that there are changes available in the remote repository without bringing into local repository
+	-> git push is used to trasfer the changes which were present in the local repository to remote repository.
+
+
+21. git fetch+git merge+git pull
+is like updating the l.r with new commits from the r.r
+22.git clone?
+for downloading the contents grom r.r.
+23.git rebase?
+integrating changes from one branch to another.
+
+
+24.git architecture?
+it uses three-tree architecture which has working directory ,staging area, and repository
+it has working copy and repository but in between there is staging area
+when we do our first  commit we can't perform commit first we used to add the files  .once added then only we can committed.
+after adding files to staging area from there we committed to repo.
+
+Git Commands:
+git init: to initialize the empty git repo.
+git status: to know the status
+git add .: to add all file
+git commit -m "my first commit" : to commit the chanes to staging area.
+git status : it will show all tracked and untracked files.
+git add remote origin <url> : to add connection between l.r and r.r
+git push -u origin master : to chnages from l.r. to r.r
+git log : it will show all commits we did 
+git branch <branch name> : to create a branch
+git checkout <branch name>: to chane from one to another branch
+git branch -d <branch name> : to delete a particular branch
+
+Git branching: What is the purpose of branching?
+Branching is used in version control and software management to maintain stability while isolated changes are made to code.
+
+
+
+
+
+
+
+
+
